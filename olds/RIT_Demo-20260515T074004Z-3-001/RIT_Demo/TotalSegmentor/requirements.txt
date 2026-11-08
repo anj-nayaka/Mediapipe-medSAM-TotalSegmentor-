@@ -1,0 +1,32 @@
+# ============================================================
+# TotalSegmentator - requirements.txt
+# Compatible Python: 3.10.x
+# ============================================================
+
+# Core scientific stack
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.9.1
+Pillow==10.4.0
+
+# DICOM reading
+pydicom==2.4.4
+SimpleITK==2.3.1
+
+# Deep Learning (CPU-friendly; for GPU replace with torch+cu121)
+torch==2.3.1
+torchvision==0.18.1
+torchaudio==2.3.1
+
+# TotalSegmentator
+TotalSegmentator==2.3.0
+
+# NIfTI / image I/O
+nibabel==5.2.1
+nilearn==0.10.4
+connected-components-3d==3.14.0
+
+# Visualization
+vtk==9.3.1
+pyvista==0.44.1
+tqdm==4.66.5

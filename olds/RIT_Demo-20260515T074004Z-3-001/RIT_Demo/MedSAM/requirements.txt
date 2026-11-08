@@ -1,0 +1,38 @@
+# ============================================================
+# MedSAM – Medical Image Segmentation - requirements.txt
+# Compatible Python: 3.10.x
+# Model weights: MedSAM (SAM ViT-B fine-tuned on medical imaging)
+# Download checkpoint from:
+#   https://drive.google.com/drive/folders/1ETWmi4AiniJeWOt6HAsYgTjYv_fkgzoN
+#   or: huggingface.co/bowang-lab/MedSAM
+# ============================================================
+
+# Core
+numpy==1.26.4
+scipy==1.13.1
+Pillow==10.4.0
+matplotlib==3.9.1
+scikit-image==0.24.0
+tqdm==4.66.5
+
+# DICOM
+pydicom==2.4.4
+SimpleITK==2.3.1
+
+# PyTorch (CPU)
+# For CUDA 12.1 GPU: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+torch==2.3.1
+torchvision==0.18.1
+
+# Segment Anything Model (SAM) – base package
+segment-anything==1.0
+
+# OpenCV (for interactive demo / bbox drawing)
+opencv-python==4.10.0.84
+
+# HuggingFace Hub (to download weights)
+huggingface_hub==0.24.6
+
+# NIfTI / 3D support
+nibabel==5.2.1
+connected-components-3d==3.14.0
